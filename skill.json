@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "Aprenda a tabuada do um ao dez",
+          "examplePhrases": [
+            "Alexa, abrir aprenda tabuada",
+            "Alexa, abrir aprenda tabuada e conte a tabuada do cinco",
+            "Alexa, abrir aprenda tabuada e tome a tabuada do dois"
+          ],
+          "keywords": [
+            "tabuada",
+            "aprender",
+            "matemática",
+            "numeros",
+            "crianças"
+          ],
+          "name": "Aprenda Tabuada",
+          "description": "Esta skill ajuda seus filhos a aprender a tabuada do um ao dez.\n\nA idéia é que as pessoas consigam aprender a tabuada, através da repetição.\n\nVocê poderá aprender a tabuada ou pedir para Alexa tomar a tabuada de você.",
+          "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
+          "updatesDescription": "Alexa te ajudará a aprender a tabuada do um ao dez.\n\nAlém disso, você pode pedir pra Alexa tomar sua tabuada, para testar seus conhecimentos aprendidos.",
+          "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "There is no special instruction to test this skill.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [
+        "BR"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:312838826821:function:c084ce31-d8bd-48e0-b0cb-ea9973fb4b5d:Release_1"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": true,
+      "usesPersonalInfo": false
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1550497317242.689229601423"
+              }
+            }
+          ],
+          "name": "LearnTabuadaIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.525545095160.1521936633074"
+              }
+            }
+          ],
+          "name": "AskTabuadaIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1517362994230.587847662723"
+              }
+            }
+          ],
+          "name": "QuestionTabuadaIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "LearnTabuadaIntent",
+          "samples": [
+            "ensinar a tabuada",
+            "ensinar a tabuada do {numero}",
+            "ensine a tabuada do {numero}",
+            "me ensine a tabuada do {numero}",
+            "aprender",
+            "como é a tabuada do {numero}",
+            "conte a tabuada do {numero}",
+            "aprender tabuada do {numero}",
+            "aprender tabuada do número {numero}",
+            "aprender a tabuada do número {numero}",
+            "aprender tabuada",
+            "aprender a tabuada"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "AskTabuadaIntent",
+          "samples": [
+            "tome",
+            "tomar",
+            "tome tabuada do número {numero}",
+            "tome tabuada do {numero}",
+            "tome tabuada",
+            "tome a tabuada do {numero}",
+            "tome a tabuada do número {numero}",
+            "tome a tabuada",
+            "tabuada do {numero}",
+            "tomar tabuada do {numero}",
+            "tomar a tabuada do {numero}",
+            "tomar a tabuada",
+            "tomar tabuada"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "QuestionTabuadaIntent",
+          "samples": [
+            "{numero}",
+            "número {numero}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "DontKnowIntent",
+          "samples": [
+            "eu não sei essa",
+            "não sei essa",
+            "eu não sei",
+            "não sei"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "De qual número você quer aprender a tabuada?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Diga o número que você quer aprender."
+          },
+          {
+            "type": "PlainText",
+            "value": "De qual numero você quer saber a tabuada?"
+          }
+        ],
+        "id": "Elicit.Slot.1550497317242.689229601423"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Me fale qual o número você quer que eu tome a tabuada?"
+          },
+          {
+            "type": "PlainText",
+            "value": "De qual número você quer que eu tome a tabuada?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Diga um número para eu tomar a tabuada."
+          }
+        ],
+        "id": "Elicit.Slot.525545095160.1521936633074"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Se a pergunta foi dois vezes dois, a resposta deve ser quatro. Qual é a resposta?"
+          },
+          {
+            "type": "PlainText",
+            "value": "A resposta da pergunta deve ser um número. Por exemplo, dois. Qual é o número?"
+          }
+        ],
+        "id": "Elicit.Slot.1517362994230.587847662723"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Diga um número"
+          }
+        ],
+        "id": "Elicit.Slot.608166146410.570798819006"
+      }
+    ]
+  }
+}
